@@ -21,7 +21,7 @@ public class InitialDataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        if(memberRepository.findByEmail("admin@test.com").isEmpty()){
+        if(memberRepository.findByEmail("admin@naver.com").isEmpty()){
             Member adminMember = Member.builder()
                     .name("admin")
                     .email("admin@naver.com")
